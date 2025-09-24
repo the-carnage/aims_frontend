@@ -418,7 +418,6 @@ export const SolarSystemVisualization: React.FC = () => {
 
   // Calculate planetary positions using live NASA data or fallback calculations
   const planets = useMemo(() => {
-    const scaleAU = 30 // 1 AU = 30 units for visualization
     
     return planetaryData.map(planet => {
       // Try to use live NASA position data first
